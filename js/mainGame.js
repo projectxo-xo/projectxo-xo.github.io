@@ -102,11 +102,121 @@ const gameData = {
         "text": 'Apa prioritasmu dalam hubungan?',
         "image": "smaller_images/snackies.png",
         "choices": {
-            "Yang bisa nyambung secara emosional, dan deep talk": [0, ["Bucin"]],
-            "Yang bisa punya pengalaman seru dan petualangan bareng": [0, ["Overthinking"]],
-            "Yang menghormati ruang personal aku": [0, ["Mandiri"]],
-            "Yang konsisten, nyaman dan tenang": [0, ["Cuek"]],
-            "Yang kasih sayang dan perhatian terus-menerus": [0, ["Clingy"]]
+            "Yang bisa nyambung secara emosional, dan deep talk": [11, ["Bucin"]],
+            "Yang bisa punya pengalaman seru dan petualangan bareng": [11, ["Overthinking"]],
+            "Yang menghormati ruang personal aku": [11, ["Mandiri"]],
+            "Yang konsisten, nyaman dan tenang": [11, ["Cuek"]],
+            "Yang kasih sayang dan perhatian terus-menerus": [11, ["Clingy"]]
+        }
+    },
+    "11": {
+        "text": 'Kalau pasanganmu lupa muji gaya atau potongan rambut baru kamu, apa yang kamu lakukan?',
+        "image": "smaller_images/snackies.png",
+        "choices": {
+            "Tersinggung, tapi kasih kode sampai sadar": [12, ["Overthinking"]],
+            "Ketawa aja, toh coma rambut": [12, ["Cuek"]],
+            'Langsung bilang "eh, nggak keliatan ya rambut aku baru?"': [12, ["Clingy"]],
+            "Diam dan pura-pura nggak peduli, tapi agak kesal": [12, ["Mandiri"]],
+            "Bikin bercandaan besar soal itu, tapi tetap sayang": [12, ["Bucin"]]
+        }
+    },
+    "12": {
+        "text": 'Gimana cara kamu respon pasangan yang lagi bad mood',
+        "image": "smaller_images/snackies.png",
+        "choices": {
+            "Peluk sampai tenang": [13, ["Clingy"]],
+            "Bikin bercandaan besar soal itu, tapi tetap sayangAjak aktivitas seru biar moodnya balik lagi": [13, ["Bucin"]],
+            "Ketawa aja, toh coma rambutDengerin curhat mereka tanpa interupsi": [13, ["Cuek"]],
+            "Kasih ruang sampai mereka siap bicara": [13, ["Mandiri"]],
+            "Cemas dan mulai overthinking tentang apa yang salah": [13, ["Overthinking"]]
+        }
+    },
+    "13": {
+        "text": 'Kalau pasanganmu minta waktu sendiri, kamu bakal:',
+        "image": "smaller_images/snackies.png",
+        "choices": {
+            "Langsung overthinking, apa aku yang salah?": [14, ["Overthinking"]],
+            "Yaudah gapapa, biarin aja": [14, ["Mandiri"]],
+            "Mulai merencanakan kejutan untuk mereka pas balik": [14, ["Bucin"]],
+            'Ketawa aja, paling mikir "akhirnya bisa maraton netflix sendirian"': [14, ["Cuek"]],
+            "Susah, sedih, berat": [14, ["Clingy"]]
+        }
+    },
+    "14": {
+        "text": 'Apa yang kamu lakukan saat pasangan lupa sesuatu yang penting untukmu?',
+        "image": "smaller_images/snackies.png",
+        "choices": {
+            "Langsung marah tapi masih maklum": [15, ["Clingy"]],
+            'Berpikir keras, "apa mereka nggak peduli?"': [15, ["Overthinking"]],
+            "Ingetin lagi dengan santai": [15, ["Cuek"]],
+            "Biarin berlalu, nggak terlalu penting": [15, ["Mandiri"]],
+            "Bikin bercandaan soal itu, tapi berharap mereka ingat": [15, ["Bucin"]]
+        }
+    },
+    "15": {
+        "text": 'Kalau pasanganmu tiba-tiba ngajak pergi jauh tanpa rencana, kamu:',
+        "image": "smaller_images/snackies.png",
+        "choices": {
+            "Semangat banget! ayok lah!": [16, ["Bucin"]],
+            "Bertanya-tanya apakah ini ide yang baik": [16, ["Overthinking"]],
+            'Bilang, "hmm.. kayaknya mendingan di rumah"': [16, ["Cuek"]],
+            'Langsung post di instagram story "couple goalsss"': [16, ["Clingy"]],
+            "Hmm.. kayaknya enakan pergi sendiri": [16, ["Mandiri"]]
+        }
+    },
+    "16": {
+        "text": 'Apa respon kamu kalau pasangan beli hadiah mahal buat kamu?',
+        "image": "smaller_images/snackies.png",
+        "choices": {
+            "OMG! Makasih! Aaa gaperlu repot-repot": [17, ["Bucin"]],
+            "Makasih yaa! Tapi kenapa boros bangett?": [17, ["Mandiri"]],
+            "Langsung merasa harus balas dengan hadiah yang setara": [17, ["Overthinking"]],
+            "Asik, makasih ya~": [17, ["Cuek"]],
+            "Seneng banget langsung update status": [17, ["Clingy"]]
+        }
+    },
+    "17": {
+        "text": 'Apa pendapatmu soal pasangan yang sering minta validasi?',
+        "image": "smaller_images/snackies.png",
+        "choices": {
+            "Suka-suka aja. Aku suka kasih perhatian ekstra, nggak masalah": [18, ["Clingy"]],
+            "Capek sih kalau keseringan": [18, ["Mandiri"]],
+            "Langsung merasa harus balas dengan hadiah yang setaraAku juga sering minta, paham banget lah": [18, ["Overthinking"]],
+            "Aku lebih suka hubungan yang santai tanpa banyak tuntutan": [18, ["Cuek"]],
+            "Aku jadikan kesempatan buat bikin mereka senyum": [18, ["Bucin"]]
+        }
+    },
+    "18": {
+        "text": 'Saat pasanganmu sibuk banget, kamu...',
+        "image": "smaller_images/snackies.png",
+        "choices": {
+            "Kirim pesan manis supaya mereka tahu aku dukung": [19, ["Bucin"]],
+            "Nunggu dengan sabar, mereka bakal kembali kalau ada waktu": [19, ["Cuek"]],
+            'Mulai overthinking, "apa aku nggak cukup penting?"': [19, ["Overthinking"]],
+            "Pakai waktu itu untuk fokus diriku sendiri": [19, ["Mandiri"]],
+            "Bikin rencana seru untuk weekend nanti": [19, ["Clingy"]]
+        }
+    },
+    "19": {
+        "text": 'Kalau pasanganmu nggak suka pamer hubungan di media sosial, kamu:',
+        "image": "smaller_images/snackies.png",
+        "choices": {
+            "Sedih tapi coba mengerti": [20, ["Clingy"]],
+            "Nggak masalah, aku juga nggak suka": [20, ["Mandiri"]],
+            'Bertanya-tanya "apa mereka sembunyiin aku dari orang lain?"': [20, ["Overthinking"]],
+            'Ketawa terus bilang "yaudah gausah drama"': [20, ["Cuek"]],
+            "Tetep posting mereka secara halus": [20, ["Bucin"]],
+        }
+    },
+    "20": {
+        "text": 'Apa yang bikin hubungan terasa istimewa buatmu?',
+        "image": "smaller_images/snackies.png",
+        "choices": {
+            "Momen kecil tapi bermakna bersama pasangan": [0, ["Bucin"]],
+            "Pengalaman seru yang menciptakan kenangan baru": [0, ["Overthinking"]],
+            "Hubungan bebas dari tekanan berlebihan": [0, ["Mandiri"]],
+            "Stablitas dan rasa aman dalam hubungan": [0, ["Cuek"]],
+            "Perasaan dihargai dan diperhatikan setiap saat": [0, ["Clingy"]],
         }
     }
 };
@@ -192,7 +302,7 @@ function revealMostSelectedVegetable() {
         storyImage.style.display = 'none';
         choicesContainer.style.display = 'none';
 
-        text.textContent = "Drumroll... here is your Veggie ID! Don't lose it! (Right click or hold the image to save)";
+        text.textContent = "Here’s your relationship style snapshot! 💕 Use it to nurture and grow meaningful connections.";
         text.appendChild(img);
 
         // Share button functionality

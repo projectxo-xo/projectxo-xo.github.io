@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What Vegetable Are You?</title>
+    <link rel="icon" href="smaller_images/XOXO.jpeg" type="image/jpeg">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <style>
@@ -17,13 +18,13 @@
             justify-content: center;
             font-family: 'Roboto', sans-serif;
             /* Use Roboto font */
-            background: #faf5e2;
+            background: #ffffff;
         }
 
         .container {
             width: 100vw;
             /* full viewport width */
-            height: calc(100vw * (16 / 9));
+            height: 100vh; /* Make the container stretch to fill the viewport height */
             /* maintain 9:16 aspect ratio */
             max-height: 150vh;
             /* full viewport height */
@@ -88,23 +89,32 @@
         .choice-button {
             font-family: 'Patrick Hand', sans-serif;
             font-size: 18px;
-            /* Adjust font size to be smaller */
-            padding: 1vh 1vw;
-            /* Adjust padding based on viewport height and width */
-            border: 0.5px solid #f2d79e;
-            /* Solid border */
-            background-color: #f6e9bd;
-            /* White background */
+            /* Slightly smaller font size */
+            padding: 0.8vh 1.8vw;
+            /* Adjust padding for a more compact look */
+            background-color: #ee885c;
+            /* Different background color (blue) */
             cursor: pointer;
-            /* Pointer cursor on hover */
-            transition: background-color 0.3s, transform 0.3s;
-            /* Smooth transitions */
+            text-decoration: none;
+            color: #FFFFFF;
+            /* White text */
+            border: 2px solid #FF4C00;
+            /* Slightly darker border color */
+            border-radius: 8px;
+            /* Rounded corners */
+            transition: all 0.3s ease-in-out;
         }
 
         @media (hover: hover) {
             .choice-button:hover {
-                background-color: #f3dba7;
-                /* Slightly darker background on hover */
+                color: #FFFFFF;
+                /* Keep the text white on hover */
+                background-color: #FF4C00;
+                /* Darker blue background */
+                border: 2px solid #FF4C00;
+                /* Even darker border color */
+                transform: scale(1.05);
+                border-radius: 0px;
             }
         }
 
@@ -140,6 +150,8 @@
 
         .responsive-image {
             max-width: 100%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
             height: auto;
         }
     </style>
