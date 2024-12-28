@@ -126,7 +126,7 @@ const gameData = {
         "choices": {
             "Peluk sampai tenang": [13, ["Clingy"]],
             "Bikin bercandaan besar soal itu, tapi tetap sayangAjak aktivitas seru biar moodnya balik lagi": [13, ["Bucin"]],
-            "Ketawa aja, toh coma rambutDengerin curhat mereka tanpa interupsi": [13, ["Cuek"]],
+            "Dengerin curhat mereka tanpa interupsi": [13, ["Cuek"]],
             "Kasih ruang sampai mereka siap bicara": [13, ["Mandiri"]],
             "Cemas dan mulai overthinking tentang apa yang salah": [13, ["Overthinking"]]
         }
@@ -297,8 +297,18 @@ function revealMostSelectedVegetable() {
     shareButton.textContent = 'Share the game with Friends';
     shareButton.className = 'choice-button';
 
+    // Show loading message or spinner
+    const loadingMessage = document.createElement('div');
+    loadingMessage.textContent = 'Loading your result...';
+    loadingMessage.className = 'loading-message'; // Style this in CSS for visibility
+    text.innerHTML = ''; // Clear previous content
+    text.appendChild(loadingMessage);
+
     // Once the image is loaded, update the DOM
     img.onload = () => {
+        // Hide the loading message
+        loadingMessage.style.display = 'none';
+
         storyImage.style.display = 'none';
         choicesContainer.style.display = 'none';
 
@@ -307,7 +317,7 @@ function revealMostSelectedVegetable() {
 
         // Share button functionality
         shareButton.onclick = () => {
-            const shareMessage = `Check out my Veggie ID! You can create yours at https://sophie006liu.github.io/vegetal/`;
+            const shareMessage = `Check out my relationship style! You can create yours at abbymarvel.github.io`;
             navigator.clipboard.writeText(shareMessage).then(() => {
                 alert('Link copied to clipboard!');
             }).catch(err => {
@@ -316,6 +326,11 @@ function revealMostSelectedVegetable() {
         };
 
         text.appendChild(shareButton);
+    };
+
+    // Handle image loading error (optional)
+    img.onerror = () => {
+        loadingMessage.textContent = 'Failed to load the image. Please try again later.';
     };
 }
 
