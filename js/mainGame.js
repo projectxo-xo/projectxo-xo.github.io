@@ -125,7 +125,7 @@ const gameData = {
         "image": "smaller_images/snackies.png",
         "choices": {
             "Peluk sampai tenang": [13, ["Clingy"]],
-            "Bikin bercandaan besar soal itu, tapi tetap sayangAjak aktivitas seru biar moodnya balik lagi": [13, ["Bucin"]],
+            "Ajak aktivitas seru biar moodnya balik lagi": [13, ["Bucin"]],
             "Dengerin curhat mereka tanpa interupsi": [13, ["Cuek"]],
             "Kasih ruang sampai mereka siap bicara": [13, ["Mandiri"]],
             "Cemas dan mulai overthinking tentang apa yang salah": [13, ["Overthinking"]]
