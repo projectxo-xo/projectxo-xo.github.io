@@ -3,11 +3,11 @@ const gameData = {
         "text": "Apa yang kamu bakal lakuin kalau pasangan nggak bales chat berjam?",
         "image": "smaller_images/snackies.png",
         "choices": {
-            "Ngechat buat nanya dia lagi ngapain": [2, ["Broccoli"]],
-            "Biarin aja, nanti juga bales": [2, ["Broccoli"]],
-            'Ngechat "kamu marah yaa sama aku?"': [2, ["Broccoli"]],
-            "Ngechat buat update hari kamu": [2, ["Broccoli"]],
-            "Lupa kalau pernah ngechat": [2, ["Broccoli"]]
+            "Ngechat buat nanya dia lagi ngapain": [2, ["Clingy"]],
+            "Biarin aja, nanti juga bales": [2, ["Cuek"]],
+            'Ngechat "kamu marah yaa sama aku?"': [2, ["Overthinking"]],
+            "Ngechat buat update hari kamu": [2, ["Bucin"]],
+            "Lupa kalau pernah ngechat": [2, ["Mandiri"]]
         }
     },
     "2": {
@@ -181,7 +181,7 @@ const gameData = {
         "choices": {
             "Suka-suka aja. Aku suka kasih perhatian ekstra, nggak masalah": [18, ["Clingy"]],
             "Capek sih kalau keseringan": [18, ["Mandiri"]],
-            "Langsung merasa harus balas dengan hadiah yang setaraAku juga sering minta, paham banget lah": [18, ["Overthinking"]],
+            "Aku juga sering minta, paham banget lah": [18, ["Overthinking"]],
             "Aku lebih suka hubungan yang santai tanpa banyak tuntutan": [18, ["Cuek"]],
             "Aku jadikan kesempatan buat bikin mereka senyum": [18, ["Bucin"]]
         }
@@ -287,6 +287,11 @@ function revealMostSelectedVegetable() {
     const choicesContainer = document.getElementById('choices');
     const veggieImagePath = `smaller_images/id_cards/${maxVeggie}.png`;
 
+    // Loading image
+    const loadImg = new Image();
+    loadImg.src = 'smaller_images/snackies.png';
+    loadImg.className = 'responsive-image';
+
     // Preload the image
     const img = new Image();
     img.src = veggieImagePath;
@@ -297,13 +302,16 @@ function revealMostSelectedVegetable() {
     shareButton.textContent = 'Share the game with Friends';
     shareButton.className = 'choice-button';
 
-    // Show loading message or spinner
+    // Hide message
     storyImage.style.display = 'none';
     choicesContainer.style.display = 'none';
+    
+    // Show loading message or spinner
     const loadingMessage = document.createElement('div');
     loadingMessage.textContent = 'Loading your result...';
     loadingMessage.className = 'loading-message'; // Style this in CSS for visibility
     text.innerHTML = ''; // Clear previous content
+    text.appendChild(loadImg);
     text.appendChild(loadingMessage);
 
     // Once the image is loaded, update the DOM
