@@ -298,6 +298,8 @@ function revealMostSelectedVegetable() {
     shareButton.className = 'choice-button';
 
     // Show loading message or spinner
+    storyImage.style.display = 'none';
+    choicesContainer.style.display = 'none';
     const loadingMessage = document.createElement('div');
     loadingMessage.textContent = 'Loading your result...';
     loadingMessage.className = 'loading-message'; // Style this in CSS for visibility
