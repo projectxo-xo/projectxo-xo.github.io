@@ -1,6 +1,6 @@
 const gameData = {
     "1": {
-        "text": "Apa yang kamu bakal lakuin kalau pasangan nggak bales chat berjam?",
+        "text": "Apa yang kamu bakal lakuin kalau pasangan nggak bales chat berjam-jam?",
         "image": "smaller_images/snackies.png",
         "choices": {
             "Ngechat buat nanya dia lagi ngapain": [2, ["Clingy"]],
