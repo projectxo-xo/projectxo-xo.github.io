@@ -222,7 +222,6 @@ const gameData = {
 };
 
 const personalities = {
-    "Broccoli": 0,
     "Clingy": 0,
     "Mandiri": 0,
     "Overthinking": 0,
@@ -230,7 +229,21 @@ const personalities = {
     "Cuek": 0
 };
 
-let currentState = 1;
+let remainingStates = Array.from({ length: 20 }, (_, i) => (i + 1).toString()); // Initialize remaining states
+
+function removeCurrentState(state) {
+    const index = remainingStates.indexOf(state);
+    if (index > -1) {
+        remainingStates.splice(index, 1);
+    }
+}
+
+function getRandomNextState() {
+    const randomIndex = Math.floor(Math.random() * remainingStates.length);
+    return remainingStates[randomIndex];
+}
+
+let currentState = getRandomNextState();
 
 function renderState(state) {
     const storyText = document.getElementById('story-text');
@@ -249,28 +262,28 @@ function renderState(state) {
             const button = document.createElement('button');
             button.textContent = choice;
             button.className = 'choice-button';
-            let nextState = info[0];
-            button.onclick = () => changeState(nextState, info[1]); //each time you change state you update the personalities dictionary
+            removeCurrentState(state)
+            button.onclick = () => changeState(info[1]); //each time you change state you update the personalities dictionary
             choicesContainer.appendChild(button);
         }
     };
 }
 
-
-function changeState(newState, selectedPersonalities) {
+function changeState(selectedPersonalities) {
     // console.log(personalities); 
     selectedPersonalities.forEach(personality => {
         personalities[personality]++;
     });
 
-    currentState = newState;
+    currentState = getRandomNextState();
 
-    if (currentState === 0) {
+    if (remainingStates.length === 0) {
         revealMostSelectedVegetable();
     } else {
         renderState(currentState);
     }
 }
+
 function revealMostSelectedVegetable() {
     let maxCount = 0;
     let maxVeggie = '';
@@ -299,7 +312,7 @@ function revealMostSelectedVegetable() {
 
     // Create the share button
     const shareButton = document.createElement('button');
-    shareButton.textContent = 'Share the game with Friends';
+    shareButton.textContent = 'Simpan foto ini dan bagikan ke teman-teman kamu supaya mereka bisa coba';
     shareButton.className = 'choice-button';
 
     // Hide message
@@ -322,18 +335,30 @@ function revealMostSelectedVegetable() {
         storyImage.style.display = 'none';
         choicesContainer.style.display = 'none';
 
-        text.textContent = "Here’s your relationship style snapshot! 💕 Use it to nurture and grow meaningful connections.";
+        text.textContent = "Ini kamu dalam berhubungan! Coba pakai ini untuk refleksi dan menumbuhkan koneksi dengan pacar kamu.";
         text.appendChild(img);
 
         // Share button functionality
-        shareButton.onclick = () => {
-            const shareMessage = `Check out my relationship style! You can create yours at abbymarvel.github.io`;
-            navigator.clipboard.writeText(shareMessage).then(() => {
-                alert('Link copied to clipboard!');
-            }).catch(err => {
-                alert('Failed to copy link. Please try again.');
-            });
-        };
+        shareButton.onclick = async () => {        
+            try {
+                // Convert the image source to a Blob
+                const response = await fetch(img.src); // Fetch the image from its source
+                const blob = await response.blob(); // Convert the image to a Blob
+        
+                // Create a ClipboardItem containing both the image and text
+                const clipboardItem = new ClipboardItem({
+                    "image/png": blob, // Add the image Blob
+                });
+        
+                // Write to clipboard
+                await navigator.clipboard.write([clipboardItem]);
+        
+                alert("Image copied to clipboard!");
+            } catch (err) {
+                console.error("Failed to copy image and text: ", err);
+                alert("Failed to copy image and text. Please try again.");
+            }
+        };        
 
         text.appendChild(shareButton);
     };
