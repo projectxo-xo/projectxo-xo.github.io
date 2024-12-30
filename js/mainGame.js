@@ -3,43 +3,43 @@ const gameData = {
         "text": "Apa yang kamu bakal lakuin kalau pasangan nggak bales chat berjam-jam?",
         "image": "smaller_images/snackies.png",
         "choices": {
-            "Ngechat buat nanya dia lagi ngapain": [2, ["Clingy"]],
+            "Ngechat buat nanya dia lagi ngapain": [1, ["Clingy"]],
             "Biarin aja, nanti juga bales": [2, ["Cuek"]],
-            'Ngechat "kamu marah yaa sama aku?"': [2, ["Overthinking"]],
-            "Ngechat buat update hari kamu": [2, ["Bucin"]],
-            "Lupa kalau pernah ngechat": [2, ["Mandiri"]]
+            'Ngechat "kamu marah yaa sama aku?"': [3, ["Overthinking"]],
+            "Ngechat buat update hari kamu": [4, ["Bucin"]],
+            "Lupa kalau pernah ngechat": [5, ["Mandiri"]]
         }
     },
     "2": {
         "text": "Apa date yang paling ideal buat kamu?",
         "image": "smaller_images/snackies.png",
         "choices": {
-            "Hangout di rumah, nonton, makan": [3, ["Cuek"]],
-            "Jalan-jalan ke tempat baru": [3, ["Overthinking"]],
+            "Hangout di rumah, nonton, makan": [1, ["Cuek"]],
+            "Jalan-jalan ke tempat baru": [2, ["Overthinking"]],
             "Makan malem romantis sambil deep talk": [3, ["Bucin"]],
-            "Yang simpel aja. Ke mall, makan, dsb.": [3, ["Mandiri"]],
-            "Apapun yang bikin pasangan bahagia": [3, ["Clingy"]]
+            "Yang simpel aja. Ke mall, makan, dsb.": [4, ["Mandiri"]],
+            "Apapun yang bikin pasangan bahagia": [5, ["Clingy"]]
         }
     },
     "3": {
         "text": "Apa yang kamu biasanya lakukan kalau berantem sama pasangan?",
         "image": "smaller_images/snackies.png",
         "choices": {
-            "Kirim chat panjang lebar tentang perasaan aku": [4, ["Overthinking"]],
-            "Biarin dulu, kasih dia waktu dan ruang": [4, ["Mandiri"]],
-            "Ajak aktivitas seru biar ketegangan ilang": [4, ["Bucin"]],
+            "Kirim chat panjang lebar tentang perasaan aku": [1, ["Overthinking"]],
+            "Biarin dulu, kasih dia waktu dan ruang": [2, ["Mandiri"]],
+            "Ajak aktivitas seru biar ketegangan ilang": [3, ["Bucin"]],
             "Berusaha ajak ngomong pelan-pelan": [4, ["Cuek"]],
-            "Langsung minta maaf, padahal bukan salah aku": [4, ["Clingy"]]
+            "Langsung minta maaf, padahal bukan salah aku": [5, ["Clingy"]]
         }
     },
     "4": {
         "text": "Apa love language yang kamu paling suka?",
         "image": "smaller_images/snackies.png",
         "choices": {
-            "Pakai kata-kata (Words of affirmation)": [5, ["Overthinking"]],
-            "Menghabiskan waktu bareng (quality time)": [5, ["Bucin"]],
-            "Pegangan tangan (physical thouch)": [5, ["Clingy"]],
-            "Ngebantuin pasangan (act of service)": [5, ["Mandiri"]],
+            "Pakai kata-kata (Words of affirmation)": [1, ["Overthinking"]],
+            "Menghabiskan waktu bareng (quality time)": [2, ["Bucin"]],
+            "Pegangan tangan (physical thouch)": [3, ["Clingy"]],
+            "Ngebantuin pasangan (act of service)": [4, ["Mandiri"]],
             "Dikasih kado sama pasangan (Receiving Gifts)": [5, ["Clingy"]]
         }
     },
@@ -47,176 +47,176 @@ const gameData = {
         "text": "Cara favoritmu menunjukkan cinta?",
         "image": "smaller_images/snackies.png",
         "choices": {
-            "Pujian-pujian dan kirim chat manis": [6, ["Bucin"]],
-            "Selalu ada saat mereka butuh": [6, ["Cuek"]],
-            "Rencanain jalan spontan bareng pasangan": [6, ["Clingy"]],
-            "Bantu menyelesaikan masalah mereka": [6, ["Mandiri"]],
-            'Selalu iseng nanya "kamu sayang aku ngga?"': [6, ["Overthinking"]]
+            "Pujian-pujian dan kirim chat manis": [1, ["Bucin"]],
+            "Selalu ada saat mereka butuh": [2, ["Cuek"]],
+            "Rencanain jalan spontan bareng pasangan": [3, ["Clingy"]],
+            "Bantu menyelesaikan masalah mereka": [4, ["Mandiri"]],
+            'Selalu iseng nanya "kamu sayang aku ngga?"': [5, ["Overthinking"]]
         }
     },
     "6": {
         "text": 'Seberapa sering kamu bilang "I love you" dalam hubungan?',
         "image": "smaller_images/snackies.png",
         "choices": {
-            "Setiap hari, setiap jam": [7, ["Clingy"]],
-            "Waktu-waktu spesial aja (valentines day, ultah, dsb)": [7, ["Mandiri"]],
-            "Kalau momennya pas": [7, ["Bucin"]],
-            "Jarang, tapi aku nunjukkin dengan cara lain": [7, ["Cuek"]],
-            "Kalau dia mulai menjauh": [7, ["Overthinking"]]
+            "Setiap hari, setiap jam": [1, ["Clingy"]],
+            "Waktu-waktu spesial aja (valentines day, ultah, dsb)": [2, ["Mandiri"]],
+            "Kalau momennya pas": [3, ["Bucin"]],
+            "Jarang, tapi aku nunjukkin dengan cara lain": [4, ["Cuek"]],
+            "Kalau dia mulai menjauh": [5, ["Overthinking"]]
         }
     },
     "7": {
         "text": 'Kalau pasanganmu lupa ulang tahunmu, apa reaksimu?',
         "image": "smaller_images/snackies.png",
         "choices": {
-            "Marah, nangis, mikir mereka ga peduli": [8, ["Overthinking"]],
-            "Kesel diem-diem tapi nggak ngomong apa apa": [8, ["Clingy"]],
-            "Ketawa aja, nggak masalah kok": [8, ["Cuek"]],
-            "Langsung ghosting seminggu": [8, ["Mandiri"]],
-            "Ngomel tapi langsung rayain sama pasangan": [8, ["Bucin"]]
+            "Marah, nangis, mikir mereka ga peduli": [1, ["Overthinking"]],
+            "Kesel diem-diem tapi nggak ngomong apa apa": [2, ["Clingy"]],
+            "Ketawa aja, nggak masalah kok": [3, ["Cuek"]],
+            "Langsung ghosting seminggu": [4, ["Mandiri"]],
+            "Ngomel tapi langsung rayain sama pasangan": [5, ["Bucin"]]
         }
     },
     "8": {
         "text": 'Pasangan yang ideal menurutmu adalah pasangan yang...',
         "image": "smaller_images/snackies.png",
         "choices": {
-            "Cocok dengan energiku suka eksplor ke tempat/pengalaman baru": [9, ["Bucin"]],
-            "Yang ngasih perhatian penuh": [9, ["Clingy"]],
-            "Yang menghormati kebebasan/ruang personal aku": [9, ["Mandiri"]],
-            "Yang stabil dan bisa diandalkan": [9, ["Cuek"]],
-            "Yang sering kasih afirmasi": [9, ["Overthinking"]]
+            "Cocok dengan energiku suka eksplor ke tempat/pengalaman baru": [1, ["Bucin"]],
+            "Yang ngasih perhatian penuh": [2, ["Clingy"]],
+            "Yang menghormati kebebasan/ruang personal aku": [3, ["Mandiri"]],
+            "Yang stabil dan bisa diandalkan": [4, ["Cuek"]],
+            "Yang sering kasih afirmasi": [5, ["Overthinking"]]
         }
     },
     "9": {
         "text": 'Apa pandangan kamu tentang PDA? Atau bucin di tempat umum?',
         "image": "smaller_images/snackies.png",
         "choices": {
-            "Suka banget!!! pegangan tangan, pelukan, semuanya": [10, ["Clingy"]],
-            "Ya, sekali-sekali gapapa deh": [10, ["Cuek"]],
-            "Tergantung suasana": [10, ["Overthinking"]],
-            "Nggak suka sama sekali": [10, ["Mandiri"]],
-            "Kalau dia suka, aku suka": [10, ["Bucin"]]
+            "Suka banget!!! pegangan tangan, pelukan, semuanya": [1, ["Clingy"]],
+            "Ya, sekali-sekali gapapa deh": [2, ["Cuek"]],
+            "Tergantung suasana": [3, ["Overthinking"]],
+            "Nggak suka sama sekali": [4, ["Mandiri"]],
+            "Kalau dia suka, aku suka": [5, ["Bucin"]]
         }
     },
     "10": {
         "text": 'Apa prioritasmu dalam hubungan?',
         "image": "smaller_images/snackies.png",
         "choices": {
-            "Yang bisa nyambung secara emosional, dan deep talk": [11, ["Bucin"]],
-            "Yang bisa punya pengalaman seru dan petualangan bareng": [11, ["Overthinking"]],
-            "Yang menghormati ruang personal aku": [11, ["Mandiri"]],
-            "Yang konsisten, nyaman dan tenang": [11, ["Cuek"]],
-            "Yang kasih sayang dan perhatian terus-menerus": [11, ["Clingy"]]
+            "Yang bisa nyambung secara emosional, dan deep talk": [1, ["Bucin"]],
+            "Yang bisa punya pengalaman seru dan petualangan bareng": [2, ["Overthinking"]],
+            "Yang menghormati ruang personal aku": [3, ["Mandiri"]],
+            "Yang konsisten, nyaman dan tenang": [4, ["Cuek"]],
+            "Yang kasih sayang dan perhatian terus-menerus": [5, ["Clingy"]]
         }
     },
     "11": {
         "text": 'Kalau pasanganmu lupa muji gaya atau potongan rambut baru kamu, apa yang kamu lakukan?',
         "image": "smaller_images/snackies.png",
         "choices": {
-            "Tersinggung, tapi kasih kode sampai sadar": [12, ["Overthinking"]],
-            "Ketawa aja, toh coma rambut": [12, ["Cuek"]],
-            'Langsung bilang "eh, nggak keliatan ya rambut aku baru?"': [12, ["Clingy"]],
-            "Diam dan pura-pura nggak peduli, tapi agak kesal": [12, ["Mandiri"]],
-            "Bikin bercandaan besar soal itu, tapi tetap sayang": [12, ["Bucin"]]
+            "Tersinggung, tapi kasih kode sampai sadar": [1, ["Overthinking"]],
+            "Ketawa aja, toh coma rambut": [2, ["Cuek"]],
+            'Langsung bilang "eh, nggak keliatan ya rambut aku baru?"': [3, ["Clingy"]],
+            "Diam dan pura-pura nggak peduli, tapi agak kesal": [4, ["Mandiri"]],
+            "Bikin bercandaan besar soal itu, tapi tetap sayang": [5, ["Bucin"]]
         }
     },
     "12": {
         "text": 'Gimana cara kamu respon pasangan yang lagi bad mood',
         "image": "smaller_images/snackies.png",
         "choices": {
-            "Peluk sampai tenang": [13, ["Clingy"]],
-            "Ajak aktivitas seru biar moodnya balik lagi": [13, ["Bucin"]],
-            "Dengerin curhat mereka tanpa interupsi": [13, ["Cuek"]],
-            "Kasih ruang sampai mereka siap bicara": [13, ["Mandiri"]],
-            "Cemas dan mulai overthinking tentang apa yang salah": [13, ["Overthinking"]]
+            "Peluk sampai tenang": [1, ["Clingy"]],
+            "Ajak aktivitas seru biar moodnya balik lagi": [2, ["Bucin"]],
+            "Dengerin curhat mereka tanpa interupsi": [3, ["Cuek"]],
+            "Kasih ruang sampai mereka siap bicara": [4, ["Mandiri"]],
+            "Cemas dan mulai overthinking tentang apa yang salah": [5, ["Overthinking"]]
         }
     },
     "13": {
         "text": 'Kalau pasanganmu minta waktu sendiri, kamu bakal:',
         "image": "smaller_images/snackies.png",
         "choices": {
-            "Langsung overthinking, apa aku yang salah?": [14, ["Overthinking"]],
-            "Yaudah gapapa, biarin aja": [14, ["Mandiri"]],
-            "Mulai merencanakan kejutan untuk mereka pas balik": [14, ["Bucin"]],
-            'Ketawa aja, paling mikir "akhirnya bisa maraton netflix sendirian"': [14, ["Cuek"]],
-            "Susah, sedih, berat": [14, ["Clingy"]]
+            "Langsung overthinking, apa aku yang salah?": [1, ["Overthinking"]],
+            "Yaudah gapapa, biarin aja": [2, ["Mandiri"]],
+            "Mulai merencanakan kejutan untuk mereka pas balik": [3, ["Bucin"]],
+            'Ketawa aja, paling mikir "akhirnya bisa maraton netflix sendirian"': [4, ["Cuek"]],
+            "Susah, sedih, berat": [5, ["Clingy"]]
         }
     },
     "14": {
         "text": 'Apa yang kamu lakukan saat pasangan lupa sesuatu yang penting untukmu?',
         "image": "smaller_images/snackies.png",
         "choices": {
-            "Langsung marah tapi masih maklum": [15, ["Clingy"]],
-            'Berpikir keras, "apa mereka nggak peduli?"': [15, ["Overthinking"]],
-            "Ingetin lagi dengan santai": [15, ["Cuek"]],
-            "Biarin berlalu, nggak terlalu penting": [15, ["Mandiri"]],
-            "Bikin bercandaan soal itu, tapi berharap mereka ingat": [15, ["Bucin"]]
+            "Langsung marah tapi masih maklum": [1, ["Clingy"]],
+            'Berpikir keras, "apa mereka nggak peduli?"': [2, ["Overthinking"]],
+            "Ingetin lagi dengan santai": [3, ["Cuek"]],
+            "Biarin berlalu, nggak terlalu penting": [4, ["Mandiri"]],
+            "Bikin bercandaan soal itu, tapi berharap mereka ingat": [5, ["Bucin"]]
         }
     },
     "15": {
         "text": 'Kalau pasanganmu tiba-tiba ngajak pergi jauh tanpa rencana, kamu:',
         "image": "smaller_images/snackies.png",
         "choices": {
-            "Semangat banget! ayok lah!": [16, ["Bucin"]],
-            "Bertanya-tanya apakah ini ide yang baik": [16, ["Overthinking"]],
-            'Bilang, "hmm.. kayaknya mendingan di rumah"': [16, ["Cuek"]],
-            'Langsung post di instagram story "couple goalsss"': [16, ["Clingy"]],
-            "Hmm.. kayaknya enakan pergi sendiri": [16, ["Mandiri"]]
+            "Semangat banget! ayok lah!": [1, ["Bucin"]],
+            "Bertanya-tanya apakah ini ide yang baik": [2, ["Overthinking"]],
+            'Bilang, "hmm.. kayaknya mendingan di rumah"': [3, ["Cuek"]],
+            'Langsung post di instagram story "couple goalsss"': [4, ["Clingy"]],
+            "Hmm.. kayaknya enakan pergi sendiri": [5, ["Mandiri"]]
         }
     },
     "16": {
         "text": 'Apa respon kamu kalau pasangan beli hadiah mahal buat kamu?',
         "image": "smaller_images/snackies.png",
         "choices": {
-            "OMG! Makasih! Aaa gaperlu repot-repot": [17, ["Bucin"]],
-            "Makasih yaa! Tapi kenapa boros bangett?": [17, ["Mandiri"]],
-            "Langsung merasa harus balas dengan hadiah yang setara": [17, ["Overthinking"]],
-            "Asik, makasih ya~": [17, ["Cuek"]],
-            "Seneng banget langsung update status": [17, ["Clingy"]]
+            "OMG! Makasih! Aaa gaperlu repot-repot": [1, ["Bucin"]],
+            "Makasih yaa! Tapi kenapa boros bangett?": [2, ["Mandiri"]],
+            "Langsung merasa harus balas dengan hadiah yang setara": [3, ["Overthinking"]],
+            "Asik, makasih ya~": [4, ["Cuek"]],
+            "Seneng banget langsung update status": [5, ["Clingy"]]
         }
     },
     "17": {
         "text": 'Apa pendapatmu soal pasangan yang sering minta validasi?',
         "image": "smaller_images/snackies.png",
         "choices": {
-            "Suka-suka aja. Aku suka kasih perhatian ekstra, nggak masalah": [18, ["Clingy"]],
-            "Capek sih kalau keseringan": [18, ["Mandiri"]],
-            "Aku juga sering minta, paham banget lah": [18, ["Overthinking"]],
-            "Aku lebih suka hubungan yang santai tanpa banyak tuntutan": [18, ["Cuek"]],
-            "Aku jadikan kesempatan buat bikin mereka senyum": [18, ["Bucin"]]
+            "Suka-suka aja. Aku suka kasih perhatian ekstra, nggak masalah": [1, ["Clingy"]],
+            "Capek sih kalau keseringan": [2, ["Mandiri"]],
+            "Aku juga sering minta, paham banget lah": [3, ["Overthinking"]],
+            "Aku lebih suka hubungan yang santai tanpa banyak tuntutan": [4, ["Cuek"]],
+            "Aku jadikan kesempatan buat bikin mereka senyum": [5, ["Bucin"]]
         }
     },
     "18": {
         "text": 'Saat pasanganmu sibuk banget, kamu...',
         "image": "smaller_images/snackies.png",
         "choices": {
-            "Kirim pesan manis supaya mereka tahu aku dukung": [19, ["Bucin"]],
-            "Nunggu dengan sabar, mereka bakal kembali kalau ada waktu": [19, ["Cuek"]],
-            'Mulai overthinking, "apa aku nggak cukup penting?"': [19, ["Overthinking"]],
-            "Pakai waktu itu untuk fokus diriku sendiri": [19, ["Mandiri"]],
-            "Bikin rencana seru untuk weekend nanti": [19, ["Clingy"]]
+            "Kirim pesan manis supaya mereka tahu aku dukung": [1, ["Bucin"]],
+            "Nunggu dengan sabar, mereka bakal kembali kalau ada waktu": [2, ["Cuek"]],
+            'Mulai overthinking, "apa aku nggak cukup penting?"': [3, ["Overthinking"]],
+            "Pakai waktu itu untuk fokus diriku sendiri": [4, ["Mandiri"]],
+            "Bikin rencana seru untuk weekend nanti": [5, ["Clingy"]]
         }
     },
     "19": {
         "text": 'Kalau pasanganmu nggak suka pamer hubungan di media sosial, kamu:',
         "image": "smaller_images/snackies.png",
         "choices": {
-            "Sedih tapi coba mengerti": [20, ["Clingy"]],
-            "Nggak masalah, aku juga nggak suka": [20, ["Mandiri"]],
-            'Bertanya-tanya "apa mereka sembunyiin aku dari orang lain?"': [20, ["Overthinking"]],
-            'Ketawa terus bilang "yaudah gausah drama"': [20, ["Cuek"]],
-            "Tetep posting mereka secara halus": [20, ["Bucin"]],
+            "Sedih tapi coba mengerti": [1, ["Clingy"]],
+            "Nggak masalah, aku juga nggak suka": [2, ["Mandiri"]],
+            'Bertanya-tanya "apa mereka sembunyiin aku dari orang lain?"': [3, ["Overthinking"]],
+            'Ketawa terus bilang "yaudah gausah drama"': [4, ["Cuek"]],
+            "Tetep posting mereka secara halus": [5, ["Bucin"]],
         }
     },
     "20": {
         "text": 'Apa yang bikin hubungan terasa istimewa buatmu?',
         "image": "smaller_images/snackies.png",
         "choices": {
-            "Momen kecil tapi bermakna bersama pasangan": [0, ["Bucin"]],
-            "Pengalaman seru yang menciptakan kenangan baru": [0, ["Overthinking"]],
-            "Hubungan bebas dari tekanan berlebihan": [0, ["Mandiri"]],
-            "Stablitas dan rasa aman dalam hubungan": [0, ["Cuek"]],
-            "Perasaan dihargai dan diperhatikan setiap saat": [0, ["Clingy"]],
+            "Momen kecil tapi bermakna bersama pasangan": [1, ["Bucin"]],
+            "Pengalaman seru yang menciptakan kenangan baru": [2, ["Overthinking"]],
+            "Hubungan bebas dari tekanan berlebihan": [3, ["Mandiri"]],
+            "Stablitas dan rasa aman dalam hubungan": [4, ["Cuek"]],
+            "Perasaan dihargai dan diperhatikan setiap saat": [5, ["Clingy"]],
         }
     }
 };
@@ -229,26 +229,26 @@ const personalities = {
     "Cuek": 0
 };
 
-let remainingStates = Array.from({ length: 20 }, (_, i) => (i + 1).toString()); // Initialize remaining states
+let remainingStates = Array.from({ length: 20 }, (_, i) => (i + 1).toString());
+const userAnswers = {};
 
-function removeCurrentState(state) {
-    const index = remainingStates.indexOf(state);
-    if (index > -1) {
-        remainingStates.splice(index, 1);
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const randomIndex = Math.floor(Math.random() * (i + 1));
+        [array[i], array[randomIndex]] = [array[randomIndex], array[i]];
     }
+    return array;
 }
 
-function getRandomNextState() {
-    const randomIndex = Math.floor(Math.random() * remainingStates.length);
-    return remainingStates[randomIndex];
-}
+remainingStates = shuffleArray(remainingStates);
 
-let currentState = getRandomNextState();
+let currentState = 0;
 
 function renderState(state) {
     const storyText = document.getElementById('story-text');
     const storyImage = document.getElementById('story-image');
     const choicesContainer = document.getElementById('choices');
+    const navigationContainer = document.getElementById('navigation-container');
 
     const img = new Image();
     img.src = gameData[state].image;
@@ -259,34 +259,103 @@ function renderState(state) {
         choicesContainer.innerHTML = '';
 
         for (const [choice, info] of Object.entries(gameData[state].choices)) {
-            const button = document.createElement('button');
-            button.textContent = choice;
+            const button = document.createElement("button");
             button.className = 'choice-button';
-            removeCurrentState(state)
-            button.onclick = () => changeState(info[1]); //each time you change state you update the personalities dictionary
+            button.textContent = choice;
+            if (userAnswers.hasOwnProperty(remainingStates[currentState]) && userAnswers[(remainingStates[currentState])][0] === info[0]) {
+                selectedAnswer = info;
+                highlightSelectedChoice(button);
+                showNextButton();
+            }
+            button.onclick = () => {
+                selectedAnswer = info;
+                highlightSelectedChoice(button);
+                showNextButton();
+            };
             choicesContainer.appendChild(button);
         }
+        const backButton = document.getElementById("back-button");
+        backButton.id = "back-button";
+        backButton.className = 'back-button';
+        backButton.textContent = "Sebelumnya";
+        if (currentState === 0) {
+            backButton.style.visibility = "hidden";
+        } else {
+            backButton.style.visibility = "visible";
+        }
+        backButton.onclick = goToPrevQuestion;
+        navigationContainer.appendChild(backButton);
+
+        const nextButton = document.getElementById("next-button");
+        nextButton.id = "next-button";
+        nextButton.className = 'next-button';
+        nextButton.textContent = "Selanjutnya";
+        if (userAnswers.hasOwnProperty(remainingStates[currentState])) {
+            nextButton.style.visibility = "visible";
+        } else {
+            nextButton.style.visibility = "hidden";
+        }
+        nextButton.onclick = goToNextQuestion;
+
+
+        navigationContainer.appendChild(nextButton);
     };
 }
 
-function changeState(selectedPersonalities) {
-    // console.log(personalities); 
-    selectedPersonalities.forEach(personality => {
-        personalities[personality]++;
-    });
+function highlightSelectedChoice(button) {
+    const choiceButtons = document.getElementById("choices").children;
+    for (let btn of choiceButtons) {
+        btn.classList.remove("selected");
+    }
+    button.classList.add("selected");
+}
 
-    currentState = getRandomNextState();
+function showNextButton() {
+    const nextButton = document.getElementById('next-button');
+    nextButton.style.visibility = "visible";
+}
 
-    if (remainingStates.length === 0) {
+function goToNextQuestion() {
+    if (selectedAnswer !== null) {
+        changeState(selectedAnswer)
+        selectedAnswer = null;
+        currentState++
+        console.log(userAnswers);
+    }
+
+    if (currentState === 20) {
         revealMostSelectedVegetable();
     } else {
-        renderState(currentState);
+        renderState(remainingStates[currentState]);
     }
+}
+
+function goToPrevQuestion() {
+    if (currentState > 0) {
+        currentState--;
+        console.log(userAnswers);
+        renderState(remainingStates[currentState]);
+    }
+}
+
+function changeState(selectedPersonalities) {
+    userAnswers[remainingStates[currentState]] = [
+        selectedPersonalities[0],
+        selectedPersonalities[1]
+    ];
 }
 
 function revealMostSelectedVegetable() {
     let maxCount = 0;
     let maxVeggie = '';
+
+    Object.entries(userAnswers).forEach(([key, value]) => {
+        value[1].forEach(personality => {
+            if (personalities.hasOwnProperty(personality)) {
+                personalities[personality]++;
+            }
+        });
+    });
 
     for (const [vegetable, count] of Object.entries(personalities)) {
         if (count > maxCount) {
@@ -298,6 +367,7 @@ function revealMostSelectedVegetable() {
     const storyImage = document.getElementById('story-image');
     const text = document.getElementById('story-text');
     const choicesContainer = document.getElementById('choices');
+    const navigationContainer = document.getElementById('navigation-container');
     const veggieImagePath = `smaller_images/id_cards/${maxVeggie}.png`;
 
     // Loading image
@@ -318,7 +388,8 @@ function revealMostSelectedVegetable() {
     // Hide message
     storyImage.style.display = 'none';
     choicesContainer.style.display = 'none';
-    
+    navigationContainer.style.display = 'none';
+
     // Show loading message or spinner
     const loadingMessage = document.createElement('div');
     loadingMessage.textContent = 'Loading your result...';
@@ -339,31 +410,27 @@ function revealMostSelectedVegetable() {
         text.appendChild(img);
 
         // Share button functionality
-        shareButton.onclick = async () => {        
+        shareButton.onclick = async () => {
             try {
-                // Convert the image source to a Blob
-                const response = await fetch(img.src); // Fetch the image from its source
-                const blob = await response.blob(); // Convert the image to a Blob
-        
-                // Create a ClipboardItem containing both the image and text
+                const response = await fetch(img.src);
+                const blob = await response.blob();
+
                 const clipboardItem = new ClipboardItem({
-                    "image/png": blob, // Add the image Blob
+                    "image/png": blob,
                 });
-        
-                // Write to clipboard
+
                 await navigator.clipboard.write([clipboardItem]);
-        
+
                 alert("Image copied to clipboard!");
             } catch (err) {
                 console.error("Failed to copy image and text: ", err);
                 alert("Failed to copy image and text. Please try again.");
             }
-        };        
+        };
 
         text.appendChild(shareButton);
     };
 
-    // Handle image loading error (optional)
     img.onerror = () => {
         loadingMessage.textContent = 'Failed to load the image. Please try again later.';
     };
@@ -375,9 +442,9 @@ function startGame() {
     document.getElementById('homescreen').style.display = 'none';
     document.querySelector('.start-button').style.display = 'none';
     document.getElementById('game-container').style.display = 'block';
-    renderState(currentState);
+    renderState(remainingStates[currentState]);
 }
 
 window.onload = () => {
-    renderState(currentState);
+    renderState(remainingStates[currentState]);
 }

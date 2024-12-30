@@ -24,7 +24,8 @@
         .container {
             width: 100vw;
             /* full viewport width */
-            height: 100vh; /* Make the container stretch to fill the viewport height */
+            height: 100vh;
+            /* Make the container stretch to fill the viewport height */
             /* maintain 9:16 aspect ratio */
             max-height: 150vh;
             /* full viewport height */
@@ -73,6 +74,52 @@
             overflow: auto;
         }
 
+        .navigation-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .next-button {
+            font-family: 'Patrick Hand', sans-serif;
+            font-size: 12px;
+            padding: 1vh 2vw;
+            background-color: #ffa57e;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 4vh;
+            margin-bottom: 2vh;
+            color: #000000;
+            border: 1px solid #3c3c3c;
+            border-radius: 30px 2px 25% 3px / 4px 10px 3px 30px;
+        }
+
+        .next-button:hover {
+            color: #fff;
+            background-color: #FF4C00;
+            border: 1px solid #000;
+        }
+
+        .back-button {
+            font-family: 'Patrick Hand', sans-serif;
+            font-size: 12px;
+            padding: 1vh 2vw;
+            background-color: #ffa57e;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 4vh;
+            margin-bottom: 2vh;
+            color: #000000;
+            border: 1px solid #3c3c3c;
+            border-radius: 30px 2px 25% 3px / 4px 10px 3px 30px;
+        }
+
+        .back-button:hover {
+            color: #fff;
+            background-color: #FF4C00;
+            border: 1px solid #000;
+        }
+
         .choices {
 
             display: flex;
@@ -118,9 +165,16 @@
             }
         }
 
-        .choice-button:focus {
-            background-color: #fff;
-            /* Slightly darker background on hover */
+        button.selected {
+            background-color: #4CAF50;
+            color: white;
+            border: 2px solid #00ff66;
+        }
+
+        button.selected:hover {
+            background-color: #4CAF50;
+            color: white;
+            border: 2px solid #00ff66;
         }
 
         .story-text {
@@ -169,6 +223,10 @@
                 <img id="story-image" src="smaller_images/placeholder.png" alt="Story Image" />
             </div>
             <div class="choices" id="choices"></div>
+            <div class="navigation-container" id="navigation-container">
+                <button class="back-button" id="back-button"></button>
+                <button class="next-button" id="next-button"></button>
+            </div>
         </div>
 
     </div>
