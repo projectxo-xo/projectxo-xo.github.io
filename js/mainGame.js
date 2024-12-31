@@ -324,7 +324,7 @@ function goToNextQuestion() {
     }
 
     if (currentState === 20) {
-        revealMostSelectedVegetable();
+        reviewAnswer();
     } else {
         renderState(remainingStates[currentState]);
     }
@@ -344,6 +344,70 @@ function changeState(selectedPersonalities) {
         selectedPersonalities[1]
     ];
 }
+
+function reviewAnswer() {
+    const storyText = document.getElementById('story-text');
+    const storyImage = document.getElementById('story-image');
+    const choicesContainer = document.getElementById('choices');
+    const navigationContainer = document.getElementById('navigation-container');
+
+    storyText.innerHTML = '';
+    storyImage.style.display = 'none';
+    choicesContainer.innerHTML = '';
+    navigationContainer.innerHTML = '';
+
+    const outerQuestionContainer = document.createElement("div");
+    outerQuestionContainer.className = 'question-container';
+
+    const questionText = document.createElement("p");
+    questionText.textContent = "Siap melanjutkan? Klik Submit jika Anda sudah yakin dengan semua pilihan Anda.";
+    outerQuestionContainer.appendChild(questionText);
+    choicesContainer.appendChild(outerQuestionContainer);
+
+    for (let i = 0; i < remainingStates.length; i++) {
+        const questionContainer = document.createElement("div");
+        questionContainer.className = 'question-container';
+
+        const questionText = document.createElement("p");
+        questionText.textContent = gameData[remainingStates[i]].text;
+        questionContainer.appendChild(questionText);
+
+        // Display the choices and highlight the selected one
+        for (const [choice, info] of Object.entries(gameData[remainingStates[i]].choices)) {
+            const button = document.createElement("button");
+            button.className = 'choice-button';
+            button.textContent = choice;
+
+            // Highlight selected choice
+            if (userAnswers.hasOwnProperty(remainingStates[i]) && userAnswers[remainingStates[i]][0] === info[0]) {
+                highlightSelectedChoice(button);
+                questionContainer.appendChild(button);
+            }
+        }
+
+        choicesContainer.appendChild(questionContainer);
+    }
+
+
+    // Back button
+    const backButton = document.createElement("button");
+    backButton.id = "back-button";
+    backButton.className = 'back-button';
+    backButton.textContent = "Sebelumnya";
+    backButton.style.visibility = "visible";
+    backButton.onclick = goToPrevQuestion;
+    navigationContainer.appendChild(backButton);
+
+    // Next button
+    const nextButton = document.createElement("button");
+    nextButton.id = "next-button";
+    nextButton.className = 'next-button';
+    nextButton.textContent = "Submit";
+    nextButton.style.visibility = "visible";
+    nextButton.onclick = revealMostSelectedVegetable;
+    navigationContainer.appendChild(nextButton);
+}
+
 
 function revealMostSelectedVegetable() {
     let maxCount = 0;
