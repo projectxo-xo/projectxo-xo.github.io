@@ -1,7 +1,7 @@
 const gameData = {
     "1": {
         "text": "Apa yang kamu bakal lakuin kalau pasangan nggak bales chat berjam-jam?",
-        "image": "smaller_images/snackies.png",
+        "image": "smaller_images/questions/quiz-1.png",
         "choices": {
             "Ngechat buat nanya dia lagi ngapain": [1, ["Clingy"]],
             "Biarin aja, nanti juga bales": [2, ["Cuek"]],
@@ -12,7 +12,7 @@ const gameData = {
     },
     "2": {
         "text": "Apa date yang paling ideal buat kamu?",
-        "image": "smaller_images/snackies.png",
+        "image": "smaller_images/questions/quiz-2.png",
         "choices": {
             "Hangout di rumah, nonton, makan": [1, ["Cuek"]],
             "Jalan-jalan ke tempat baru": [2, ["Overthinking"]],
@@ -23,7 +23,7 @@ const gameData = {
     },
     "3": {
         "text": "Apa yang kamu biasanya lakukan kalau berantem sama pasangan?",
-        "image": "smaller_images/snackies.png",
+        "image": "smaller_images/questions/quiz-3.png",
         "choices": {
             "Kirim chat panjang lebar tentang perasaan aku": [1, ["Overthinking"]],
             "Biarin dulu, kasih dia waktu dan ruang": [2, ["Mandiri"]],
@@ -34,7 +34,7 @@ const gameData = {
     },
     "4": {
         "text": "Apa love language yang kamu paling suka?",
-        "image": "smaller_images/snackies.png",
+        "image": "smaller_images/questions/quiz-4.png",
         "choices": {
             "Pakai kata-kata (Words of affirmation)": [1, ["Overthinking"]],
             "Menghabiskan waktu bareng (quality time)": [2, ["Bucin"]],
@@ -45,7 +45,7 @@ const gameData = {
     },
     "5": {
         "text": "Cara favoritmu menunjukkan cinta?",
-        "image": "smaller_images/snackies.png",
+        "image": "smaller_images/questions/quiz-5.png",
         "choices": {
             "Pujian-pujian dan kirim chat manis": [1, ["Bucin"]],
             "Selalu ada saat mereka butuh": [2, ["Cuek"]],
@@ -56,7 +56,7 @@ const gameData = {
     },
     "6": {
         "text": 'Seberapa sering kamu bilang "I love you" dalam hubungan?',
-        "image": "smaller_images/snackies.png",
+        "image": "smaller_images/questions/quiz-6.png",
         "choices": {
             "Setiap hari, setiap jam": [1, ["Clingy"]],
             "Waktu-waktu spesial aja (valentines day, ultah, dsb)": [2, ["Mandiri"]],
@@ -67,7 +67,7 @@ const gameData = {
     },
     "7": {
         "text": 'Kalau pasanganmu lupa ulang tahunmu, apa reaksimu?',
-        "image": "smaller_images/snackies.png",
+        "image": "smaller_images/questions/quiz-7.png",
         "choices": {
             "Marah, nangis, mikir mereka ga peduli": [1, ["Overthinking"]],
             "Kesel diem-diem tapi nggak ngomong apa apa": [2, ["Clingy"]],
@@ -78,7 +78,7 @@ const gameData = {
     },
     "8": {
         "text": 'Pasangan yang ideal menurutmu adalah pasangan yang...',
-        "image": "smaller_images/snackies.png",
+        "image": "smaller_images/questions/quiz-8.png",
         "choices": {
             "Cocok dengan energiku suka eksplor ke tempat/pengalaman baru": [1, ["Bucin"]],
             "Yang ngasih perhatian penuh": [2, ["Clingy"]],
@@ -89,7 +89,7 @@ const gameData = {
     },
     "9": {
         "text": 'Apa pandangan kamu tentang PDA? Atau bucin di tempat umum?',
-        "image": "smaller_images/snackies.png",
+        "image": "smaller_images/questions/quiz-9.png",
         "choices": {
             "Suka banget!!! pegangan tangan, pelukan, semuanya": [1, ["Clingy"]],
             "Ya, sekali-sekali gapapa deh": [2, ["Cuek"]],
@@ -100,7 +100,7 @@ const gameData = {
     },
     "10": {
         "text": 'Apa prioritasmu dalam hubungan?',
-        "image": "smaller_images/snackies.png",
+        "image": "smaller_images/questions/quiz-10.png",
         "choices": {
             "Yang bisa nyambung secara emosional, dan deep talk": [1, ["Bucin"]],
             "Yang bisa punya pengalaman seru dan petualangan bareng": [2, ["Overthinking"]],
@@ -111,7 +111,7 @@ const gameData = {
     },
     "11": {
         "text": 'Kalau pasanganmu lupa muji gaya atau potongan rambut baru kamu, apa yang kamu lakukan?',
-        "image": "smaller_images/snackies.png",
+        "image": "smaller_images/questions/quiz-11.png",
         "choices": {
             "Tersinggung, tapi kasih kode sampai sadar": [1, ["Overthinking"]],
             "Ketawa aja, toh coma rambut": [2, ["Cuek"]],
@@ -122,7 +122,7 @@ const gameData = {
     },
     "12": {
         "text": 'Gimana cara kamu respon pasangan yang lagi bad mood',
-        "image": "smaller_images/snackies.png",
+        "image": "smaller_images/questions/quiz-12.png",
         "choices": {
             "Peluk sampai tenang": [1, ["Clingy"]],
             "Ajak aktivitas seru biar moodnya balik lagi": [2, ["Bucin"]],
@@ -133,7 +133,7 @@ const gameData = {
     },
     "13": {
         "text": 'Kalau pasanganmu minta waktu sendiri, kamu bakal:',
-        "image": "smaller_images/snackies.png",
+        "image": "smaller_images/questions/quiz-13.png",
         "choices": {
             "Langsung overthinking, apa aku yang salah?": [1, ["Overthinking"]],
             "Yaudah gapapa, biarin aja": [2, ["Mandiri"]],
@@ -144,7 +144,7 @@ const gameData = {
     },
     "14": {
         "text": 'Apa yang kamu lakukan saat pasangan lupa sesuatu yang penting untukmu?',
-        "image": "smaller_images/snackies.png",
+        "image": "smaller_images/questions/quiz-14.png",
         "choices": {
             "Langsung marah tapi masih maklum": [1, ["Clingy"]],
             'Berpikir keras, "apa mereka nggak peduli?"': [2, ["Overthinking"]],
@@ -155,7 +155,7 @@ const gameData = {
     },
     "15": {
         "text": 'Kalau pasanganmu tiba-tiba ngajak pergi jauh tanpa rencana, kamu:',
-        "image": "smaller_images/snackies.png",
+        "image": "smaller_images/questions/quiz-15.png",
         "choices": {
             "Semangat banget! ayok lah!": [1, ["Bucin"]],
             "Bertanya-tanya apakah ini ide yang baik": [2, ["Overthinking"]],
@@ -166,7 +166,7 @@ const gameData = {
     },
     "16": {
         "text": 'Apa respon kamu kalau pasangan beli hadiah mahal buat kamu?',
-        "image": "smaller_images/snackies.png",
+        "image": "smaller_images/questions/quiz-16.png",
         "choices": {
             "OMG! Makasih! Aaa gaperlu repot-repot": [1, ["Bucin"]],
             "Makasih yaa! Tapi kenapa boros bangett?": [2, ["Mandiri"]],
@@ -177,7 +177,7 @@ const gameData = {
     },
     "17": {
         "text": 'Apa pendapatmu soal pasangan yang sering minta validasi?',
-        "image": "smaller_images/snackies.png",
+        "image": "smaller_images/questions/quiz-17.png",
         "choices": {
             "Suka-suka aja. Aku suka kasih perhatian ekstra, nggak masalah": [1, ["Clingy"]],
             "Capek sih kalau keseringan": [2, ["Mandiri"]],
@@ -188,7 +188,7 @@ const gameData = {
     },
     "18": {
         "text": 'Saat pasanganmu sibuk banget, kamu...',
-        "image": "smaller_images/snackies.png",
+        "image": "smaller_images/questions/quiz-18.png",
         "choices": {
             "Kirim pesan manis supaya mereka tahu aku dukung": [1, ["Bucin"]],
             "Nunggu dengan sabar, mereka bakal kembali kalau ada waktu": [2, ["Cuek"]],
@@ -199,7 +199,7 @@ const gameData = {
     },
     "19": {
         "text": 'Kalau pasanganmu nggak suka pamer hubungan di media sosial, kamu:',
-        "image": "smaller_images/snackies.png",
+        "image": "smaller_images/questions/quiz-19.png",
         "choices": {
             "Sedih tapi coba mengerti": [1, ["Clingy"]],
             "Nggak masalah, aku juga nggak suka": [2, ["Mandiri"]],
@@ -210,7 +210,7 @@ const gameData = {
     },
     "20": {
         "text": 'Apa yang bikin hubungan terasa istimewa buatmu?',
-        "image": "smaller_images/snackies.png",
+        "image": "smaller_images/questions/quiz-20.png",
         "choices": {
             "Momen kecil tapi bermakna bersama pasangan": [1, ["Bucin"]],
             "Pengalaman seru yang menciptakan kenangan baru": [2, ["Overthinking"]],
