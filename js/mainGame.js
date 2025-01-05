@@ -316,11 +316,12 @@ function showNextButton() {
 }
 
 function goToNextQuestion() {
+    const storyImage = document.getElementById('story-image');
+    storyImage.style.display = 'block';
     if (selectedAnswer !== null) {
         changeState(selectedAnswer)
         selectedAnswer = null;
         currentState++
-        console.log(userAnswers);
     }
 
     if (currentState === 20) {
@@ -331,9 +332,10 @@ function goToNextQuestion() {
 }
 
 function goToPrevQuestion() {
+    const storyImage = document.getElementById('story-image');
+    storyImage.style.display = 'block';
     if (currentState > 0) {
         currentState--;
-        console.log(userAnswers);
         renderState(remainingStates[currentState]);
     }
 }
