@@ -501,8 +501,8 @@ function revealMostSelectedVegetable() {
 
                 navigator.share({
                     files: [file],
-                    title: 'Your Vegetable Personality Result',
-                    text: 'Check out my result and try it yourself!',
+                    title: 'Your Relationship Personality Result',
+                    text: 'Ini hasilku! Yuk, coba kuisnya!',
                 }).catch(err => {
                     console.error('Error sharing:', err);
                     alert('Failed to share. Please try saving the image manually.');
