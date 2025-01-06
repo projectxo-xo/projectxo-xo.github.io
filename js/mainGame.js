@@ -482,14 +482,14 @@ function revealMostSelectedVegetable() {
             const context = canvas.getContext('2d');
 
             // Set canvas dimensions to match the image
-            canvas.width = img.width;
-            canvas.height = img.height;
+            canvas.width = img.naturalWidth;
+            canvas.height = img.naturalHeight;
 
             // Draw the image onto the canvas
             context.drawImage(img, 0, 0, img.width, img.height);
 
             // Convert the canvas to a data URL
-            const imageDataURL = canvas.toDataURL('image/png');
+            const imageDataURL = canvas.toDataURL('image/png', 1.0);
 
             // Detect mobile device
             const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
