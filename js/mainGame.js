@@ -491,12 +491,30 @@ function revealMostSelectedVegetable() {
             // Convert the canvas to a data URL
             const imageDataURL = canvas.toDataURL('image/png');
 
-            // Create a temporary link to trigger the download
-            const link = document.createElement('a');
-            link.href = imageDataURL;
-            link.download = `${maxVeggie}-result.png`; // Name of the downloaded file
-            link.click();
-        };    
+            // Detect mobile device
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+            if (isMobile && navigator.canShare) {
+                // Use Web Share API for mobile
+                const blob = await (await fetch(imageDataURL)).blob();
+                const file = new File([blob], `${maxVeggie}-result.png`, { type: blob.type });
+
+                navigator.share({
+                    files: [file],
+                    title: 'Your Vegetable Personality Result',
+                    text: 'Check out my result and try it yourself!',
+                }).catch(err => {
+                    console.error('Error sharing:', err);
+                    alert('Failed to share. Please try saving the image manually.');
+                });
+            } else {
+                // Fallback: Trigger download
+                const link = document.createElement('a');
+                link.href = imageDataURL;
+                link.download = `${maxVeggie}-result.png`; // Name of the downloaded file
+                link.click();
+            }
+        };
 
         text.appendChild(shareButton);
     };
