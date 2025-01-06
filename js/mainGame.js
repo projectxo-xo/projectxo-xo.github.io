@@ -477,35 +477,26 @@ function revealMostSelectedVegetable() {
 
         // Share button functionality
         shareButton.onclick = async () => {
-            try {
-                // Fetch the image as a blob
-                const blob = await fetch(img.src).then(res => res.blob());
+            // Create a canvas and draw the image onto it
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d');
 
-                // Check if Clipboard API supports `write`
-                if (navigator.clipboard && navigator.clipboard.write) {
-                    // Create a clipboard item for the image
-                    const clipboardItem = new ClipboardItem({ [blob.type]: blob });
+            // Set canvas dimensions to match the image
+            canvas.width = img.width;
+            canvas.height = img.height;
 
-                    await navigator.clipboard.write([clipboardItem]);
-                    alert("Image copied to clipboard! You can now paste it anywhere.");
-                } else {
-                    // Fallback: Let the user download the image
-                    const link = document.createElement('a');
-                    link.href = img.src;
-                    link.download = `${maxVeggie}.png`;
-                    link.textContent = "Download the image";
+            // Draw the image onto the canvas
+            context.drawImage(img, 0, 0, img.width, img.height);
 
-                    // Show a message to manually share
-                    text.appendChild(document.createElement('br'));
-                    text.appendChild(document.createTextNode('Your browser doesn’t support copying images. You can download the image and share it manually.'));
-                    text.appendChild(document.createElement('br'));
-                    text.appendChild(link);
-                }
-            } catch (error) {
-                console.error('Error copying to clipboard:', error);
-                alert('Failed to copy the image. Please try again or use the download option.');
-            }
-        };
+            // Convert the canvas to a data URL
+            const imageDataURL = canvas.toDataURL('image/png');
+
+            // Create a temporary link to trigger the download
+            const link = document.createElement('a');
+            link.href = imageDataURL;
+            link.download = `${maxVeggie}-result.png`; // Name of the downloaded file
+            link.click();
+        };    
 
         text.appendChild(shareButton);
     };
