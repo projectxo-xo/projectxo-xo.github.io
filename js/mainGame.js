@@ -486,7 +486,7 @@ function revealMostSelectedVegetable() {
             canvas.height = img.naturalHeight;
 
             // Draw the image onto the canvas
-            context.drawImage(img, 0, 0, img.width, img.height);
+            context.drawImage(img, 0, 0, img.naturalWidth, img.naturalHeight);
 
             // Convert the canvas to a data URL
             const imageDataURL = canvas.toDataURL('image/png', 1.0);
