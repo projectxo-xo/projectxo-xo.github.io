@@ -478,19 +478,32 @@ function revealMostSelectedVegetable() {
         // Share button functionality
         shareButton.onclick = async () => {
             try {
-                const response = await fetch(img.src);
-                const blob = await response.blob();
+                // Fetch the image as a blob
+                const blob = await fetch(img.src).then(res => res.blob());
 
-                const clipboardItem = new ClipboardItem({
-                    "image/png": blob,
-                });
+                // Check if Clipboard API supports `write`
+                if (navigator.clipboard && navigator.clipboard.write) {
+                    // Create a clipboard item for the image
+                    const clipboardItem = new ClipboardItem({ [blob.type]: blob });
 
-                await navigator.clipboard.write([clipboardItem]);
+                    await navigator.clipboard.write([clipboardItem]);
+                    alert("Image copied to clipboard! You can now paste it anywhere.");
+                } else {
+                    // Fallback: Let the user download the image
+                    const link = document.createElement('a');
+                    link.href = img.src;
+                    link.download = `${maxVeggie}.png`;
+                    link.textContent = "Download the image";
 
-                alert("Image copied to clipboard!");
-            } catch (err) {
-                console.error("Failed to copy image and text: ", err);
-                alert("Failed to copy image and text. Please try again.");
+                    // Show a message to manually share
+                    text.appendChild(document.createElement('br'));
+                    text.appendChild(document.createTextNode('Your browser doesn’t support copying images. You can download the image and share it manually.'));
+                    text.appendChild(document.createElement('br'));
+                    text.appendChild(link);
+                }
+            } catch (error) {
+                console.error('Error copying to clipboard:', error);
+                alert('Failed to copy the image. Please try again or use the download option.');
             }
         };
 
