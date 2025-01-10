@@ -511,7 +511,7 @@ function revealMostSelectedVegetable() {
                 // Fallback: Trigger download
                 const link = document.createElement('a');
                 link.href = imageDataURL;
-                link.download = `${maxVeggie}-result.png`; // Name of the downloaded file
+                link.download = `${maxVeggie}-result.png`;
                 link.click();
             }
         };
